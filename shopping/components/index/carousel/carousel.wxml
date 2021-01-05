@@ -1,0 +1,7 @@
+<view>
+  <swiper circular indicator-dots autoplay>
+    <swiper-item wx:for="{{arr}}" wx:key="index">
+      <image src="{{item.image_url}}" class="imgitem"></image>
+    </swiper-item>
+  </swiper>
+</view>

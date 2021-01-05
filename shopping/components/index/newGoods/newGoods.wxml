@@ -1,0 +1,12 @@
+<view class="mb20">
+  <scroll-view scroll-x="true">
+    <view class="df">
+      <view wx:for="{{arr}}" wx:key="index" class="ml10" data-item="{{item}}" bindtap="binddetails">
+        <image src="{{item.list_pic_url}}" mode="aspectFit" class="imgitem"></image>
+        <view class="otd1">{{item.name}}</view>
+        <view class="otd1 cg fs14">{{item.goods_brief}}</view>
+        <view class="cr">¥{{item.retail_price}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

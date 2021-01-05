@@ -1,0 +1,18 @@
+@import "../../../style/lxh.wxss";
+
+.vitem {
+  width: 46%;
+}
+
+.imgitem {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.bgd {
+  background: #EEEEEE;
+}
+
+.iitem {
+  width: 50rpx;
+}

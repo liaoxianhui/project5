@@ -1,0 +1,67 @@
+<view>
+  <view class="df jc-sa aic pt20 pb20 cw bgdr">
+    <view class="df aic" style="width:80%">
+      <van-image wx:if="{{isHide==true}}" round lazy-load width="100rpx" height="100rpx"
+        src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      <van-image wx:else round lazy-load width="100rpx" height="100rpx" src="{{obj.avatarUrl}}" />
+      <view wx:if="{{isHide==true}}">
+        <button class="m0 p0 cw ml10" style="color:white;border:0px" plain size="mini" open-type="getUserInfo"
+          bindgetuserinfo="tologin">点击登录</button>
+      </view>
+      <view wx:else>
+        <view class="ml10">{{obj.nickName}}</view>
+      </view>
+    </view>
+    <view>
+      <van-icon name="arrow" size="50rpx" bindtap="bindclear" />
+    </view>
+  </view>
+  <view>
+    <view class="df fww fs14">
+      <view class="tac vtt">
+        <van-icon name="description" size="60rpx" class="cg" />
+        <view>我的订单</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="gift-card-o" size="60rpx" class="cg" />
+        <view>优惠券</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="envelop-o" size="60rpx" class="cg" />
+        <view>礼品卡</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="star-o" size="60rpx" class="cg" />
+        <view>我的收藏</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="more-o" size="60rpx" class="cg" />
+        <view>我的足迹</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="vip-card-o" size="60rpx" class="cg" />
+        <view>会员福利</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="logistics" size="60rpx" class="cg" />
+        <view>地址管理</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="aim" size="60rpx" class="cg" />
+        <view>账户安全</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="gift-o" size="60rpx" class="cg" />
+        <view>联系客户</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="question-o" size="60rpx" class="cg" />
+        <view>帮助中心</view>
+      </view>
+      <view class="tac vtt">
+        <van-icon name="comment-o" size="60rpx" class="cg" />
+        <view>意见反馈</view>
+      </view>
+    </view>
+  </view>
+</view>

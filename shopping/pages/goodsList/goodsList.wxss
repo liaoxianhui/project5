@@ -1,0 +1,4 @@
+.vitem {
+  border: 1rpx solid gray;
+  width: 49.7%;
+}

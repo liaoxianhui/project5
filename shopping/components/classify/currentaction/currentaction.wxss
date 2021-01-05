@@ -1,0 +1,13 @@
+@import "../../../style/lxh.wxss";
+
+.imgitem {
+  height: 200rpx;
+}
+
+.imgcut {
+  height: 200rpx;
+}
+
+.vitem {
+  width: 32%;
+}

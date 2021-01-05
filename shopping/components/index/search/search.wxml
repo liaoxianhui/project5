@@ -1,0 +1,6 @@
+<view class=" df jcc aic">
+  <view class="ml5">地址</view>
+  <view class="vsearch">
+    <van-search value="{{ value }}" shape="round" custom-class="search"  placeholder="请输入搜索关键词" />
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="df jc-sa mt20 mb20">
+  <view wx:for="{{arr}}" wx:key="index" class="tac" data-index="{{index}}" data-item="{{item}}" bindtap="bindClass">
+    <image src="{{item.icon_url}}" mode="aspectFit" class="imgitem"></image>
+    <view class="fs14">{{item.name}}</view>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+<view>
+  <swiper indicator-dots="true" autoplay="true" circular="true" style="height:600rpx">
+    <view wx:for="{{obj.gallery}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item.img_url}}" class="w100 h100"></image>
+      </swiper-item>
+    </view>
+  </swiper>
+  <view class="df jc-sa fs14 pt10 pb10 bgd">
+    <view class="df aic">
+      <view class="circle b1sr br50"></view>
+      <view>30天无忧退货</view>
+    </view>
+    <view class="df aic">
+      <view class="circle b1sr br50"></view>
+      <view>48小时快速退款</view>
+    </view>
+    <view class="df aic">
+      <view class="circle b1sr br50"></view>
+      <view>满88元免邮费</view>
+    </view>
+  </view>
+  <view class="tac pt20">
+    <view>{{obj.info.name}}</view>
+    <view class="fs14 mt10 mb20">{{obj.info.goods_brief}}</view>
+    <view class="cr">¥{{obj.info.retail_price}}</view>
+  </view>
+  <view class="btop mt20">
+    <view class="m20">
+      <view>产品参数</view>
+      <view>
+        <view wx:for="{{obj.attribute}}" wx:key="index">
+          <view class="df be fs12 mt10 pt10 pb10">
+            <view class="textname ml10">{{item.name}}:</view>
+            <view>{{item.value}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <import src="../../lib/wxParse/wxParse.wxml"></import>
+    <template is="wxParse" data="{{wxParseData:goods.nodes}}"></template>
+  </view>
+  <view>
+    <view class="tac">—— 常见问题 ——</view>
+    <view class="m20">
+      <view class="mb10">
+        <view class="df aic mb5">
+          <view class="circleb br br50"></view>
+          <view>购买运费如何收取?</view>
+        </view>
+        <view class="cg">单笔订单金额(不含运费)满88元免邮费;不满88元,每单收取10元运费。(港澳台地区需满</view>
+      </view>
+      <view class="mb10">
+        <view class="df aic mb5">
+          <view class="circleb br br50"></view>
+          <view>使用什么快递发货?</view>
+        </view>
+        <view class="cg">严选默认使用顺丰快递发货(个别商品使用其他快递)，配送范围覆盖全国大部分地区（港澳台地区除</view>
+      </view>
+      <view class="mb10">
+        <view class="df aic mb5">
+          <view class="circleb br br50"></view>
+          <view>如何申请退赀? </view>
+        </view>
+        <view class="cg">1.自收到商品之日起30日内，顾客可申请无忧退货，退款将原路返还，不同的银行处理时间不同，</view>
+      </view>
+      <view class="mb10">
+        <view class="df aic mb5">
+          <view class="circleb br br50"></view>
+          <view>如何开具发票? </view>
+        </view>
+        <view class="cg">1.如需开具普通发票，请在下单时选择“我要开发票”并填写相关信息( APP仅限2.4.0及以</view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="tac">—— 大家都在看 ——</view>
+    <view class="df fww">
+      <view wx:for="{{obj.productList}}" wx:key="index" class="tac widthhalf" data-item="{{item}}"
+        bindtap="bindDetails">
+        <image src="{{item.list_pic_url}}" mode="aspectFit" class="w100 imgitem"></image>
+        <view class="otd1 mb5">{{item.name}}</view>
+        <view class="cr">¥{{item.retail_price}}</view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <van-goods-action>
+      <van-goods-action-icon icon="{{flag==true?'like':'like-o'}}" icon-class="iconred" text="收藏"
+        bindtap="clickcollect" />
+      <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+      <van-goods-action-button text="加入购物车" type="warning" />
+      <van-goods-action-button text="立即购买" />
+    </van-goods-action>
+  </view>
+</view>

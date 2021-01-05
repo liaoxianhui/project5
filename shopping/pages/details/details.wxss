@@ -1,0 +1,35 @@
+.circle {
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 10rpx;
+}
+
+.bgd {
+  background: #EEEEEE;
+}
+
+.textname {
+  width: 20%;
+}
+
+.circleb {
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 10rpx;
+}
+
+.widthhalf {
+  width: 50%;
+}
+
+.imgitem {
+  height: 250rpx;
+}
+
+.btop {
+  border-top: 1rpx solid rgb(185, 183, 183);
+}
+
+.iconred {
+  color: red;
+}

@@ -1,0 +1,6 @@
+@import "../../../style/lxh.wxss";
+
+.imgitem {
+  width: 300rpx;
+  height: 220rpx;
+}

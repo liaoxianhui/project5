@@ -1,0 +1,9 @@
+/* components/index/search/search.wxss */
+@import "../../../style/lxh.wxss";
+
+.vsearch{
+  width: 90%;
+}
+.search {
+  width: 100%;
+}

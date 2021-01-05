@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "search": "../../components/index/search/search",
+    "carousel": "../../components/index/carousel/carousel",
+    "fiveClassify": "../../components/index/fiveClassify/fiveClassify",
+    "brandList": "../../components/index/brandList/brandList",
+    "new": "../../components/index/new/new",
+    "hot": "../../components/index/hot/hot",
+    "special": "../../components/index/special/special",
+    "newCategoryList": "../../components/index/newCategoryList/newCategoryList",
+    "newGoods": "../../components/index/newGoods/newGoods"
+  }
+}

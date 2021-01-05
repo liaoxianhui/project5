@@ -1,0 +1,14 @@
+@import "../../../style/lxh.wxss";
+
+.vnew {
+  background: #F1F7FC;
+  padding: 60rpx 0;
+  color: #8C9BB2;
+}
+
+.more {
+  background: #D8E4F0;
+  padding: 10rpx 20rpx;
+  display: inline;
+  border-radius: 10rpx;
+}

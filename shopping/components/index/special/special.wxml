@@ -1,0 +1,15 @@
+<view>
+  <view class="tac mb10">专题精选</view>
+  <scroll-view scroll-x>
+    <view class="df">
+      <view wx:for="{{arr}}" wx:key="index" class="vitem ml10 mr20" data-item="{{item}}" bindtap="bindDetails">
+        <image src="{{item.item_pic_url}}"></image>
+        <view class="df mb5 mt5">
+          <view>{{item.title}}</view>
+          <view class="cr ml10">¥{{item.price_info}}起</view>
+        </view>
+        <view class="cg fs14 otd1">{{item.subtitle}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

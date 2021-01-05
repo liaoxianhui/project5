@@ -1,0 +1,22 @@
+<view>
+  <view>
+    <!-- animated sticky swipeable  -->
+    <van-tabs active="{{ active }}" sticky="true" swipeable="true" bind:change="bindchange">
+      <view wx:for="{{arr}}" wx:key="index">
+        <van-tab title="{{item.name}}">
+          <view wx:if="{{active==index}}" class="tac mt10 mb10">
+            <view class="mb5">{{obj.name}}</view>
+            <view>{{obj.front_desc}}</view>
+          </view>
+          <view class="df fww">
+            <view wx:for="{{arrdata}}" wx:key="index" class="tac vitem" data-item="{{item}}" bindtap="binddetails">
+              <image src="{{item.list_pic_url}}" mode="aspectFit" class="w100"></image>
+              <view>{{item.name}}</view>
+              <view class="cr mb5">¥{{item.retail_price}}</view>
+            </view>
+          </view>
+        </van-tab>
+      </view>
+    </van-tabs>
+  </view>
+</view>

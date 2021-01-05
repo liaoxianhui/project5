@@ -1,0 +1,10 @@
+<view>
+  <view>
+    <view wx:for="{{arr}}" wx:key="index" class="tac mb20" data-item="{{item}}" bindtap="bindtap">
+      <image src="{{item.scene_pic_url}}" class="w100"></image>
+      <view>{{item.title}}</view>
+      <view class="cg fs14">{{item.subtitle}}</view>
+      <view class="cr">¥{{item.price_info}}元起</view>
+    </view>
+  </view>
+</view>

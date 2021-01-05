@@ -1,0 +1,9 @@
+.bgdr {
+  background: #B4282D;
+}
+
+.vtt {
+  width: 33.05%;
+  padding: 50rpx 0;
+  border: 1rpx solid rgb(170, 168, 168);
+}

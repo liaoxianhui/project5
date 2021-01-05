@@ -1,0 +1,12 @@
+<view>
+  <view class="tac mb10">品牌制造商直供</view>
+  <view class="df fww jc-sa">
+    <view wx:for="{{arr}}" wx:key="index" class="vitem pr mb5 fs14">
+      <image src="{{item.new_pic_url}}" class="imgitem"></image>
+      <view class="pa zi9 titem">
+        <view>{{item.name}}</view>
+        <view class="cg">{{item.floor_price}}元起</view>
+      </view>
+    </view>
+  </view>
+</view>

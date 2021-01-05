@@ -1,0 +1,10 @@
+.circle{
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 10rpx;
+}
+
+.imgitem{
+  width: 200rpx;
+  height: 200rpx;
+}

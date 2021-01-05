@@ -1,0 +1,32 @@
+<view>
+  <view class="df jc-sa fs14 mt10">
+    <view class="df aic">
+      <view class="circle b1sr br50"></view>
+      <view>30天无忧退货</view>
+    </view>
+    <view class="df aic">
+      <view class="circle b1sr br50"></view>
+      <view>48小时快速退款</view>
+    </view>
+    <view class="df aic">
+      <view class="circle b1sr br50"></view>
+      <view>满88元免邮费</view>
+    </view>
+  </view>
+  <view class="df aic jc-sa mt20">
+    <view class="df aic" style="width:80%">
+      <van-checkbox value="{{ checked }}" bind:change="onChange"></van-checkbox>
+      <image src="https://img.yzcdn.cn/vant/cat.jpeg" class="imgitem ml10 mr10"></image>
+      <view>
+        <view class="mb10">title</view>
+        <view>price</view>
+      </view>
+    </view>
+    <view>x2</view>
+  </view>
+  <view>
+    <van-submit-bar price="{{ 3050*100 }}" button-text="提交订单" bind:submit="onClickButton">
+      <van-checkbox value="{{ checked }}" bind:change="onChange">复选框</van-checkbox>
+    </van-submit-bar>
+  </view>
+</view>

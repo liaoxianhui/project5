@@ -1,0 +1,30 @@
+<view>
+  <!-- 地址、搜索 -->
+  <search></search>
+  <!-- 轮播图 -->
+  <carousel arr="{{arr1}}"></carousel>
+  <!-- 分类 -->
+  <fiveClassify arr="{{arr2}}"></fiveClassify>
+  <!-- 品牌列表 -->
+  <brandList arr="{{arr3}}"></brandList>
+  <!-- 新品首发 -->
+  <new></new>
+  <!-- 新产品 -->
+  <newGoods arr="{{arr4}}"></newGoods>
+  <!-- 人气首发 -->
+  <hot></hot>
+  <!-- 人气产品 -->
+  <newGoods arr="{{arr5}}"></newGoods>
+  <!-- 专题精选 -->
+  <special arr="{{arr6}}"></special>
+  <!-- 居家 -->
+  <newCategoryList arr="{{arr7}}"></newCategoryList>
+  <newCategoryList arr="{{arr8}}"></newCategoryList>
+  <newCategoryList arr="{{arr9}}"></newCategoryList>
+  <newCategoryList arr="{{arr10}}"></newCategoryList>
+  <newCategoryList arr="{{arr11}}"></newCategoryList>
+  <newCategoryList arr="{{arr12}}"></newCategoryList>
+  <newCategoryList arr="{{arr13}}"></newCategoryList>
+  <newCategoryList arr="{{arr14}}"></newCategoryList>
+  <newCategoryList arr="{{arr15}}"></newCategoryList>
+</view>

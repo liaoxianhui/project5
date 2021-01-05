@@ -1,0 +1,13 @@
+<view>
+  <view>
+    <image src="{{obj.banner_url}}" mode="aspectFit" class="imgcut"></image>
+  </view>
+  <view class="tac mt20 mb20">-- {{obj.name}}分类 --</view>
+  <view class="df fww">
+    <view wx:for="{{obj.subList}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bindtap="bindgoodslist"
+      class="tac vitem mb10">
+      <image src="{{item.wap_banner_url}}" class="imgitem w100"></image>
+      <view class="fs14">{{item.name}}</view>
+    </view>
+  </view>
+</view>

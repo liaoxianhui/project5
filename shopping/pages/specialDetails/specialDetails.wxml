@@ -1,0 +1,4 @@
+<view>
+  <import src="../../lib/wxParse/wxParse.wxml" />
+  <template is="wxParse" data="{{wxParseData:arr.nodes}}"></template>
+</view>

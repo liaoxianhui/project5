@@ -1,0 +1,15 @@
+<view>
+  <view>
+    <van-search value="{{ value }}" shape="round" custom-class="w100" placeholder="请输入搜索关键词" />
+  </view>
+  <view class="df">
+    <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+      <view wx:for="{{arr}}" wx:key="index" data-item="{{item}}" bindtap="bindchange">
+        <van-sidebar-item title="{{item.name}}" />
+      </view>
+    </van-sidebar>
+    <view>
+      <currentaction obj="{{obj}}"></currentaction>
+    </view>
+  </view>
+</view>

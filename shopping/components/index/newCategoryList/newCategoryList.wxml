@@ -1,0 +1,19 @@
+<view class="bgd pt10">
+  <view class="tac mt10 mb20">{{arr.name}}</view>
+  <view class="df fww ">
+    <view wx:for="{{arr.goodsList}}" wx:key="index" data-item="{{item}}" bindtap="binddetails" class="vitem bw ml10 tac mb10">
+      <image src="{{item.list_pic_url}}" class="imgitem"></image>
+      <view>
+        <view class="otd1">{{item.name}}</view>
+        <view class="cr">¥{{item.retail_price}}</view>
+      </view>
+    </view>
+    <view class="vitem ml10 df jcc aic bw mb10">
+      <view class="df aic">
+        <view>{{arr.name}}</view>
+        <image src="../../../assets/images/right.png" mode="aspectFit" class="iitem ml5"></image>
+      </view>
+      <view></view>
+    </view>
+  </view>
+</view>
